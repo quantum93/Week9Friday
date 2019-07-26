@@ -33,7 +33,8 @@ Make an application that contains a Word class. The homepage of the app should l
 | test for search, delete, add action and it works for words |
 | test for add, update, and delete definition |      
 | fix bug for display of word definition at first |
-| fix to meet minimum Requirements of spec |                         
+| fix to meet minimum Requirements of spec |      
+| deployment to Heroku (https://mysterious-river-47339.herokuapp.com/)|
 
 ## Known Bugs
 
@@ -49,6 +50,8 @@ _Please contact us if you have any issues at: taebumlee@gmail.com_
 * RubyGems
 * Atom
 * GitHub
+* Heroku
+
 
 ### License
 _This software is licensed under MIT license._

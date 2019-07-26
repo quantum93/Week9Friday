@@ -52,6 +52,17 @@ describe '#Word' do
       end
     end
 
+    describe('#delete') do
+      it("deletes an word by id") do
+        word = Word.new("year", "the time in which a planet completes a revolution about the sun", nil)
+        word.save()
+        word2 = Word.new("month", "a measure of time corresponding nearly to the period of the revolution of moon and amounting to approximately 4 weeks or 30 days", nil)
+        word2.save()
+        word.delete()
+        expect(Word.all).to(eq([word2]))
+      end
+    end
+
     describe('#update') do
       it("updates an word by id") do
         word = Word.new("year", "the time in which a planet completes a revolution about the sun", nil)
@@ -61,14 +72,12 @@ describe '#Word' do
       end
     end
 
-    describe('#delete') do
-      it("deletes an word by id") do
+    describe('#update') do
+      it("updates an word by id") do
         word = Word.new("year", "the time in which a planet completes a revolution about the sun", nil)
         word.save()
-        word2 = Word.new("month", "a measure of time corresponding nearly to the period of the revolution of moon and amounting to approximately 4 weeks or 30 days", nil)
-        word2.save()
-        word.delete()
-        expect(Word.all).to(eq([word2]))
+        word.update("year", "the time required for the apparent sun to return to an arbitrary fixed or moving reference point in the sky", nil)
+        expect(word.definition).to(eq("the time required for the apparent sun to return to an arbitrary fixed or moving reference point in the sky"))
       end
     end
 

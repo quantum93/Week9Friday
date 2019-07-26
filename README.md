@@ -31,7 +31,8 @@ Make an application that contains a Word class. The homepage of the app should l
 | writing of app.rb for view |
 | writing of erb files for view |    
 | test for search, delete, add action and it works for words |
-|                               
+| test for add, update, and delete definition |      
+| fix bug for display of word definition at first |                         
 
 ## Known Bugs
 

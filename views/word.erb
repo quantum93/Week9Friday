@@ -1,7 +1,4 @@
-<h4>Word: <%= @word.name %></h4>
-<h4>Definitions: <%= @word.definition %></h4>
-
-<h3>Word Definitions</h3>
+<h3>Definitions of Word: <%= @word.name %></h3>
   <% if @word.definitions %>
     <ul>
       <% @word.definitions.each do |definition| %>
@@ -12,7 +9,6 @@
     <p>There are no definitions listed for this word yet.</p>
   <% end %>
 
-<h4>Add a definition:</h4>
 <form action="/words/<%= @word.id %>/definitions" method="post">
   <div class="form-group">
     <label for="definition_name">Description of Definition</label>
@@ -22,4 +18,4 @@
 </form>
 
 <p><a href="/words/<%= @word.id %>/edit">Edit word</a></p>
-<a href = "/words">Return to word list</a>
+<p><a href = "/words">Return to word list</a></p>

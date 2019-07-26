@@ -26,8 +26,9 @@ Make an application that contains a Word class. The homepage of the app should l
 | --------------------------------- |:---------------------:| ----------------:|
 | Project setup with files and folders including bundle                        |
 | writing of classes for word and definition with first unit test pass         |
-| unit test for save, comparison, clear, find, update, delete                  |
-|
+| unit test for save, comparison, clear, find, update, delete in word class    |
+| unit test for save, comparison, find, find by word, clear, update, delete, word_belong |
+| 
 
 ## Known Bugs
 

@@ -17,7 +17,7 @@ class Word
   end
 
   def save
-    @@words[self.id] = Word.new(self.name, self.definition)
+    @@words[self.id] = Word.new(self.name, self.definition, self.id)
   end
 
   def == (word_to_compare)
@@ -40,10 +40,10 @@ class Word
     end
   end
 
-  def update(name,definition)
+  def update(name, definition, id)
     self.name = name
     self.definition = definition
-    @@words[self.id] = Word.new(self.name,self.definition, self.id)
+    @@words[self.id] = Word.new(self.name, self.definition, self.id)
   end
 
   def delete

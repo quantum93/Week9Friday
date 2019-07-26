@@ -1,0 +1,29 @@
+<h1>Word Definer for Kids</h1>
+
+<h3>Available Words to Lookup</h3>
+
+<% if @words.any? %>
+  <ul>
+    <% @words.each do |word| %>
+      <li><strong><%=word.name%></strong>: <%=word.definition%></li>
+    <% end %>
+  </ul>
+<% else %>
+  <p>There are currently no words to display.</p>
+<% end %>
+
+<a href="/words/new">Add a new word</a>
+
+<form action="/words_search" method='post'>
+  <div class="form-group">
+    <label for="search">Search</label>
+    <input type="text" name="search" class="form-control" id="search">
+  </div>
+  <button type="submit" class="btn btn-info">Search</button>
+</form>
+
+<h3>Details about Each Word</h3>
+
+ <% @words.each do |word| %>
+  <li><a href="/words/<%= word.id %>"><%=word.name %></a></li>
+  <% end %>

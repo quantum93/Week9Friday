@@ -22,8 +22,10 @@ Make an application that contains a Word class. The homepage of the app should l
 * _To run tests, type 'rspec' in terminal_
 
 ## Specs
-| Behavior      | Input         | Output |
-| ------------- |:-------------:| ------:|
+| Behavior                          | Input                 | Output           |
+| --------------------------------- |:---------------------:| ----------------:|
+| Project setup with files and folders                                         |
+| 
 
 ## Known Bugs
 
